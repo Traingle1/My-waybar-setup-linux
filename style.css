@@ -1,0 +1,74 @@
+/* THEME */
+* {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 13px;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+}
+
+/* WINDOW */
+window#waybar {
+  background: transparent;
+  color: #ededed;
+}
+
+/* CUSTOM LOGO'S CPU, RAM */
+#custom-logo, #workspaces, #clock, #cpu, #memory,
+#network, #pulseaudio, #battery, #tray {
+  background: #0b0b0b;
+  color: #ededed;
+  border: 1px solid #2e2e2e;
+  border-radius: 16px;
+  padding: 0 14px;
+  margin: 0;
+}
+
+/* BLAH BLAH BLAH YOU KNOW WHAT IT IS JUST READ BRO DONT BE LAZY */
+
+#custom-logo {
+  background: #f2f2f2;
+  color: #0b0b0b;
+  font-size: 16px;
+  border-color: #f2f2f2;
+}
+
+#workspaces { padding: 0 4px; }
+
+#workspaces button {
+  background: transparent;
+  color: #6a6a6a;
+  padding: 0 8px;
+  margin: 4px 2px;
+  border-radius: 12px;
+}
+
+#workspaces button.active {
+  background: #f2f2f2;
+  color: #0b0b0b;
+}
+
+#workspaces button.urgent {
+  background: #d96b6b;
+  color: #0b0b0b;
+}
+
+#workspaces button:hover {
+  background: #262626;
+  color: #ffffff;
+}
+
+#clock { font-weight: bold; }
+
+#battery.warning { color: #e0b050; }
+#battery.critical { color: #d96b6b; }
+#battery.charging { color: #f2f2f2; }
+#pulseaudio.muted, #network.disconnected { color: #6a6a6a; }
+
+tooltip {
+  background: #0b0b0b;
+  border: 1px solid #2e2e2e;
+  border-radius: 10px;
+}
+
+tooltip label { color: #ededed; }
